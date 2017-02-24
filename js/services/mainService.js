@@ -1,6 +1,6 @@
 angular.module('devmtnTravel').service('mainSrv', function(){
 
-    this.travelInfo = [{
+    var travelInfo = [{
         city: 'New York',
         country: 'United States',
         image: "../img/NewYork.jpg",
@@ -25,4 +25,25 @@ angular.module('devmtnTravel').service('mainSrv', function(){
 
 
     }]
+    this.getLocation = function(id){
+      return travelInfo.find(loc => loc.id === +id);
+    
+  }
+
+    this.getLocations = function(){
+      return travelInfo;
+    }
+
+    // this.getLocation = function(id){
+    //   var theOneINeed;
+    //   for (var i = 0; i < travelInfo.length; i++) {
+    //     if (travelInfo[i]===id){
+    //       theOneINeed = travelInfo[i];
+    //     }
+    //   }
+    //     return theOneINeed;
+    // }
+
+
+
 })

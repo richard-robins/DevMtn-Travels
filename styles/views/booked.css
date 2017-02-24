@@ -17,6 +17,7 @@
 
 .booked-main-container img {
     width: 100%;
+    background: url()
 }
 
 .booked-main-container button {
@@ -25,4 +26,8 @@
     background: #4BACC1;
     font-size: 18px;
     color: #FFFFFF;
+}
+
+.bookedHeading {
+  color: white;
 }
